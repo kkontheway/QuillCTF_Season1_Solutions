@@ -2,12 +2,12 @@
 pragma solidity 0.8.7;
 
 import "forge-std/Test.sol";
-import "../src/GoldNFT/GoldNFT.sol";
-import "../src/GoldNFT/HackGoldNft.sol";
+import "../src/16-GoldNFT/GoldNFT.sol";
+import "../src/16-GoldNFT/HackGoldNft.sol";
 
 contract Hack is Test {
     GoldNFT nft;
-    HackGoldNft nftHack;
+    HackGoldNft exp;
     address owner = makeAddr("owner");
     address hacker = makeAddr("hacker");
 

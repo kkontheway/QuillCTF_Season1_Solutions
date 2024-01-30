@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
-import {ReentrancyGuard} from "openzeppelin-contracts/security/ReentrancyGuard.sol";
-import {SafeTransferLib} from "solmate/utils/SafeTransferLib.sol";
+import {ReentrancyGuard} from "../../lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol";
+import {SafeTransferLib} from "../../lib/solmate/src/utils/SafeTransferLib.sol";
 import {SlotPuzzle} from "./SlotPuzzle.sol";
-import {EnumerableSet} from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
+import {EnumerableSet} from "../../lib/openzeppelin-contracts/contracts/utils/structs/EnumerableSet.sol";
 import "./interface/ISlotPuzzleFactory.sol";
 
 contract SlotPuzzleFactory is ReentrancyGuard {

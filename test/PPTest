@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^ 0.8.7;
 
 import "forge-std/Test.sol";
-import "../src/7-ppp/PelusaExploit.sol";
+import "../src/8-Pelusa/PelusaExploit.sol";
 
 contract PelusaTest is Test {
     Pelusa pel;
@@ -21,7 +21,7 @@ contract PelusaTest is Test {
             emit log_uint(i);
             expl = new PelusaExploit{
                 salt: bytes32(uint256(i))
-            }(pel, pelusaDeployer, blockhash(block.number));
+            } (pel, pelusaDeployer, blockhash(block.number));
         }
     }
 
@@ -35,7 +35,7 @@ contract PelusaTest is Test {
         */
         expl = new PelusaExploit{
             salt: bytes32(uint256(39)) // salt value 39 was found by brute forcing the create2 address pre computation in the above test
-        }(pel, pelusaDeployer, blockhash(block.number));
+        } (pel, pelusaDeployer, blockhash(block.number));
         pel.shoot();
         vm.stopPrank();
 

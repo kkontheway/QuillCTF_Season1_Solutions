@@ -4,7 +4,7 @@ pragma solidity 0.8.7;
 
 import "forge-std/Test.sol";
 import "openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol";
-import "../src/4-NFT/safeNFT.sol";
+import "../src/4-safeNFT/safeNFT.sol";
 
 contract AttackerNFT is IERC721Receiver, Test {
     safeNFT _nft;

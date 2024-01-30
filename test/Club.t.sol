@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import "../src/PrivateClub/club.sol";
+import "../src/21-PrivateClub/PrivateClub.sol";
 
 contract Hack is Test {
     PrivateClub club;

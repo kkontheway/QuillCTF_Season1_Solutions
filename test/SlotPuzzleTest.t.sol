@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+pragma solidity ^ 0.8.17;
 
 import "forge-std/Test.sol";
 
-import {SlotPuzzle} from "../src/slotpuzzle/SlotPuzzle.sol";
-import {SlotPuzzleFactory} from "../src/slotpuzzle/SlotPuzzleFactory.sol";
-import {Parameters, Recipients} from "../src/slotpuzzle/interface/ISlotPuzzleFactory.sol";
+import {SlotPuzzle} from "../src/15-slotpuzzle/SlotPuzzle.sol";
+import {SlotPuzzleFactory} from "../src/15-slotpuzzle/SlotPuzzleFactory.sol";
+import {Parameters, Recipients} from "../src/15-slotpuzzle/interface/ISlotPuzzleFactory.sol";
 
 contract SlotPuzzleTest is Test {
     SlotPuzzle public slotPuzzle;

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.12;
 
 import "forge-std/Test.sol";
-import "../src/Voting-machine/VotingMachine.sol";
+import "../src/20-Voting-machine/VotingMachine.sol";
 
 contract exploitTest is Test {
     VoteToken vToken;

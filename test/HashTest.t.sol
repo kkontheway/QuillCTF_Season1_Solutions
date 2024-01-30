@@ -2,7 +2,7 @@
 pragma solidity 0.8.7;
 
 import "forge-std/Test.sol";
-import "../src/2-Hash/Hash.sol";
+import "../src/2-Confidential_Hash/Confidential_Hash.sol";
 
 contract testCon is Test, Confidential {
     Confidential challenge;

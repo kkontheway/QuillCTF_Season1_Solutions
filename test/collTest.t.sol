@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/6-coll/coll.sol";
+import "../src/6-Collatzpuzzle/Collatzpuzzle.sol";
 
 contract Attack {
     function deploy() public returns (address) {
